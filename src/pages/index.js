@@ -1,6 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
 
-const IndexPage = () => <h1>Shit Fuck Piss</h1>
+const IndexPage = () => {
+  return (
+    <div>
+      <h1>Shit Fuck Piss</h1>
+      <p>{`The key is: ${process.env.GATSBY_SITE}`}</p>
+      <p>{`The key is: ${process.env.GATSBY_USER}`}</p>
+      <p>{`The key is: ${process.env.GATSBY_PASSWORD}`}</p>
+    </div>
+  )
+}
 
 export default IndexPage
